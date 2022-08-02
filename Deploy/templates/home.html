@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    this is my page
+
+    <form action="{% url 'results' %}">
+
+        {% csrf_token %}
+
+        LP_CustomerPrincipalPayments: <input type="text" required name="LP_CustomerPrincipalPayments" > <br> <br>
+        LoanMonthsSinceOrigination: <input type="text" required name="LoanMonthsSinceOrigination"> <br> <br>
+        LP_CustomerPayments: <input type="text" required name="LP_CustomerPayments"> <br> <br>
+        ClosedDate_day: <input type="text" required name="ClosedDate_day"> <br> <br>
+        ClosedDate_month: <input type="text" required name="ClosedDate_month"> <br> <br>
+        EmploymentStatus_Full_time: <input type="text" required name="EmploymentStatus_Full_time"> <br> <br>
+        Investors: <input type="text" required name="Investors"> <br> <br>
+        MonthlyLoanPayment: <input type="text" required name="MonthlyLoanPayment"> <br> <br>
+        LoanOriginationQuarter_Q1_2014: <input type="text" required name="LoanOriginationQuarter_Q1_2014"> <br> <br>
+        LoanOriginalAmount: <input type="text" required name="LoanOriginalAmount"> <br> <br>
+        LoanOriginationQuarter_Q4_2013: <input type="text" required name="LoanOriginationQuarter_Q4_2013"> <br> <br>
+        ClosedDate_year: <input type="text" required name="ClosedDate_year"> <br> <br>
+        DateCreditPulled_year: <input type="text" required name="DateCreditPulled_year"> <br> <br>
+        LoanOriginationDate_year: <input type="text" required name="LoanOriginationDate_year"> <br> <br>
+        ListingCreationDate_year: <input type="text" required name="ListingCreationDate_year"> <br> <br>
+        
+        <input type="submit" name="" value="submit">
+    </form>
+</body>
+</html>
