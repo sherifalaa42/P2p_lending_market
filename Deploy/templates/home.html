@@ -5,31 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    this is my page
 
-    <form action="{% url 'results' %}">
 
+<section>
+    <div class="container">
+      
+      <form action="{% url 'results' %}" method="POST" id="my-form">
         {% csrf_token %}
+        <div class="form-group">
+          <label > LP_CustomerPrincipalPayments</label>
+          <input type="text" required name="LP_CustomerPrincipalPayments">
+        </div>
+  
+        <div class="form-group">
+          <label >LoanMonthsSinceOrigination</label>
+          <input type="text" required name="LoanMonthsSinceOrigination">
+        </div>
 
-        LP_CustomerPrincipalPayments: <input type="text" required name="LP_CustomerPrincipalPayments" > <br> <br>
-        LoanMonthsSinceOrigination: <input type="text" required name="LoanMonthsSinceOrigination"> <br> <br>
-        LP_CustomerPayments: <input type="text" required name="LP_CustomerPayments"> <br> <br>
-        ClosedDate_day: <input type="text" required name="ClosedDate_day"> <br> <br>
-        ClosedDate_month: <input type="text" required name="ClosedDate_month"> <br> <br>
-        EmploymentStatus_Full_time: <input type="text" required name="EmploymentStatus_Full_time"> <br> <br>
-        Investors: <input type="text" required name="Investors"> <br> <br>
-        MonthlyLoanPayment: <input type="text" required name="MonthlyLoanPayment"> <br> <br>
-        LoanOriginationQuarter_Q1_2014: <input type="text" required name="LoanOriginationQuarter_Q1_2014"> <br> <br>
-        LoanOriginalAmount: <input type="text" required name="LoanOriginalAmount"> <br> <br>
-        LoanOriginationQuarter_Q4_2013: <input type="text" required name="LoanOriginationQuarter_Q4_2013"> <br> <br>
-        ClosedDate_year: <input type="text" required name="ClosedDate_year"> <br> <br>
-        DateCreditPulled_year: <input type="text" required name="DateCreditPulled_year"> <br> <br>
-        LoanOriginationDate_year: <input type="text" required name="LoanOriginationDate_year"> <br> <br>
-        ListingCreationDate_year: <input type="text" required name="ListingCreationDate_year"> <br> <br>
-        
-        <input type="submit" name="" value="submit">
-    </form>
+        <div class="form-group">
+            <label >LP_CustomerPayments</label>
+            <input type="text" required name="LP_CustomerPayments">
+          </div>
+
+          <div class="form-group">
+            <label >ClosedDate_day</label>
+            <input type="text" required name="ClosedDate_day">
+          </div>
+
+          <div class="form-group">
+            <label >ClosedDate_month</label>
+            <input type="text" required name="ClosedDate_month">
+          </div>
+
+          <div class="form-group">
+            <label >EmploymentStatus_Full_time</label>
+            <input type="text" required name="EmploymentStatus_Full_time">
+          </div>
+
+          <div class="form-group">
+            <label >Investors</label>
+            <input type="text" required name="Investors">
+          </div>
+
+          <div class="form-group">
+            <label >MonthlyLoanPayment</label>
+            <input type="text" required name="MonthlyLoanPayment">
+          </div>
+
+          <div class="form-group">
+            <label >LoanOriginationQuarter_Q1_2014</label>
+            <input type="text" required name="LoanOriginationQuarter_Q1_2014">
+          </div>
+
+          <div class="form-group">
+            <label >LoanOriginalAmount</label>
+            <input type="text" required name="LoanOriginalAmount">
+          </div>
+
+          <div class="form-group">
+            <label >LoanOriginationQuarter_Q4_2013</label>
+            <input type="text" required name="LoanOriginationQuarter_Q4_2013">
+          </div>
+
+          <div class="form-group">
+            <label >ClosedDate_year</label>
+            <input type="text" required name="ClosedDate_year">
+          </div>
+
+          <div class="form-group">
+            <label >DateCreditPulled_year</label>
+            <input type="text" required name="DateCreditPulled_year">
+          </div>
+
+          <div class="form-group">
+            <label >LoanOriginationDate_year</label>
+            <input type="text" required name="LoanOriginationDate_year">
+          </div>
+
+          <div class="form-group">
+            <label >ListingCreationDate_year</label>
+            <input type="text" required name="ListingCreationDate_year">
+          </div>
+  
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+
 </body>
 </html>

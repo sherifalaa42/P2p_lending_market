@@ -25,6 +25,8 @@ SECRET_KEY = 'django-insecure-#%#@zhrr(uh0jxrqvb_c23v@hdf7)r9h@kuzc3i9tx36c@4%gr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+STATICFILES_DIRS = ["D:\Projects\lending_market\Deploy\static",]
+
 ALLOWED_HOSTS = []
 
 
