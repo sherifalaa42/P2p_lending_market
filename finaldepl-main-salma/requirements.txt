@@ -4,10 +4,8 @@ astunparse==1.6.3
 cachetools==5.2.0
 certifi==2022.6.15
 charset-normalizer==2.1.0
-dj-database-url==1.0.0
 Django==4.1
 django-crispy-forms==1.14.0
-django-heroku==0.3.1
 djangorestframework==3.13.1
 flatbuffers==1.12
 gast==0.4.0
@@ -15,7 +13,6 @@ google-auth==2.9.1
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 grpcio==1.47.0
-gunicorn==20.1.0
 h5py==3.7.0
 idna==3.3
 importlib-metadata==4.12.0
@@ -29,7 +26,6 @@ opt-einsum==3.3.0
 packaging==21.3
 pandas==1.4.3
 protobuf==3.19.4
-psycopg2==2.9.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pyparsing==3.0.9
@@ -52,6 +48,12 @@ typing_extensions==4.3.0
 tzdata==2022.1
 urllib3==1.26.11
 Werkzeug==2.2.1
-whitenoise==6.2.0
 wrapt==1.14.1
 zipp==3.8.1
+psycopg2==2.9.3
+gunicorn==20.1.0
+django-heroku==0.3.1
+django-crispy-forms==1.14.0
+dj-database-url==1.0.0
+python-decouple==3.6
+whitenoise==6.2.0
